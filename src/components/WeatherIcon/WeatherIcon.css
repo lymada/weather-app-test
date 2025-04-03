@@ -1,18 +1,51 @@
 .weather-icon {
     display: block;
-  }
-  
-  .weather-icon-large {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+.weather-icon:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.weather-icon-large {
     width: 80px;
     height: 80px;
-  }
-  
-  .weather-icon-medium {
+    border-radius: 20px;
+    background: linear-gradient(135deg, #787575, #ffffff);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon-medium {
     width: 50px;
     height: 50px;
-  }
-  
-  .weather-icon-small {
+    border-radius: 15px;
+    background: linear-gradient(135deg, #787575, #ffffff);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon-small {
     width: 30px;
     height: 30px;
-  }
+    border-radius: 10px;
+    background: linear-gradient(135deg, #787575, #ffffff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.weather-icon {
+    animation: fadeIn 0.5s ease-in-out;
+}

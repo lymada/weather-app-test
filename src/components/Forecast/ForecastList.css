@@ -24,9 +24,9 @@
     display: flex;
     overflow-x: auto;
     padding: 15px 0;
+    border-radius: 20px;
   }
   
-  /* Add scrollbar styling for better UX */
   .forecast-items::-webkit-scrollbar {
     height: 6px;
   }

@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import ForecastItem from './ForecastItem';
 import { ForecastData, GroupedForecast } from '../../types';
 import './ForecastList.css';
+import { formatDate } from 'src/utils/helpers';
 
 interface ForecastListProps {
   forecast: ForecastData;
@@ -31,7 +32,7 @@ const ForecastList: React.FC<ForecastListProps> = ({ forecast }) => {
       
       {Object.entries(groupedForecast).map(([day, items]) => (
         <div key={day} className="forecast-day">
-          <h3>{day}</h3>
+          <h3>{formatDate(items[0]?.dt)}</h3>
           <div className="forecast-items">
             {items.map(item => (
               <ForecastItem key={item.dt} data={item} />
