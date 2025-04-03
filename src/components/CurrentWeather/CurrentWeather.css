@@ -1,0 +1,72 @@
+.current-weather {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f0f7ff;
+    border-radius: 10px;
+  }
+  
+  .weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .weather-primary {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .temperature-container {
+    margin-left: 15px;
+  }
+  
+  .temperature-container h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .weather-secondary {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .detail-label {
+    color: #777;
+  }
+  
+  .detail-value {
+    font-weight: 500;
+  }
+  
+  .wind-direction {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .weather-primary {
+      margin-right: 0;
+    }
+  }
