@@ -36,7 +36,6 @@ const Search: React.FC<SearchProps> = ({
     setShowHistory(false);
   };
 
-  // Close history dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent): void {
       if (searchRef.current && !searchRef.current.contains(event.target as Node)) {

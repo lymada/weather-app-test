@@ -1,4 +1,3 @@
-/* Search */
 .search-container {
     position: relative;
     max-width: 600px;
@@ -40,7 +39,6 @@
     text-align: center;
   }
   
-  /* Search History Dropdown */
   .search-history-dropdown {
     position: absolute;
     top: 100%;

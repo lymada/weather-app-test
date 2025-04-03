@@ -8,7 +8,6 @@ interface ForecastListProps {
 }
 
 const ForecastList: React.FC<ForecastListProps> = ({ forecast }) => {
-  // Group forecast by day
   const groupedForecast: GroupedForecast = useMemo(() => {
     const grouped: GroupedForecast = {};
     

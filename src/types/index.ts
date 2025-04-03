@@ -1,4 +1,3 @@
-// Weather data types
 export interface WeatherData {
     coord: {
       lon: number;
@@ -93,7 +92,6 @@ export interface WeatherData {
     dt_txt: string;
   }
   
-  // Grouped forecast by day
   export interface GroupedForecast {
     [day: string]: ForecastItem[];
   }
