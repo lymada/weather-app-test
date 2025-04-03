@@ -1,6 +1,6 @@
 import { WeatherData, ForecastData } from '../types';
 
-const API_KEY = 'f5531d2b07f300c9e49e8b10dcab2f77';
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 

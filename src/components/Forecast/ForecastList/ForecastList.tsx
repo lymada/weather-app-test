@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
-import ForecastItem from './ForecastItem';
-import { ForecastData, GroupedForecast } from '../../types';
 import './ForecastList.css';
 import { formatDate } from 'src/utils/helpers';
+import { ForecastData, GroupedForecast } from 'src/types';
+import ForecastItem from '../ForecastItem';
 
 interface ForecastListProps {
   forecast: ForecastData;
