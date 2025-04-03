@@ -14,13 +14,11 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    // Load search history from localStorage
     const savedHistory = localStorage.getItem('searchHistory');
     if (savedHistory) {
       setSearchHistory(JSON.parse(savedHistory));
     }
     
-    // Initial weather fetch (default city or geolocation)
     const fetchDefaultWeather = async () => {
       try {
         const defaultCity = 'London';
@@ -33,7 +31,6 @@ const App: React.FC = () => {
     fetchDefaultWeather();
   }, []);
 
-  // Save search history to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
   }, [searchHistory]);
@@ -49,7 +46,6 @@ const App: React.FC = () => {
       setCurrentWeather(weatherData);
       setForecast(forecastData);
       
-      // Add to search history if not already there
       if (!searchHistory.includes(city)) {
         setSearchHistory(prev => [city, ...prev.slice(0, 9)]);
       }
